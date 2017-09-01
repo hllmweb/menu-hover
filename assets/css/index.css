@@ -1,0 +1,53 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+	margin: 0;
+}
+body{
+	webkit-transition: all .25s ease;
+	transition: all .25s ease;
+}
+header#topo{
+	height: 80px;
+	background: transparent;
+	box-shadow: 0 -6px 9px #333;
+}
+nav.menu{
+	position: fixed;
+	top: 0;
+	right: -200px;
+	background: #333;
+	transition: width 1s ease;
+	width: 200px;
+    height: 100%;
+    z-index: 1;
+    webkit-box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
+    box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
+}
+nav.menu ul{
+	list-style: none;
+}
+.ativa-menu{
+	width:400px !important;
+}
+.icon-menu{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	color: #333;
+}
+.icon-close{
+	position: absolute;
+	top: 0;
+	right: 220px;
+	color: #FFF;
+}
+.icon-menu i, .icon-close i{
+	font-size: 42px;
+	cursor: pointer;
+}
+.mascara{
+	background: rgba(0,0,0,0.6);
+}
