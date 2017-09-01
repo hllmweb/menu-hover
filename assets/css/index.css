@@ -13,23 +13,54 @@ header#topo{
 	background: transparent;
 	box-shadow: 0 -6px 9px #333;
 }
+
 nav.menu{
 	position: fixed;
 	top: 0;
-	right: -200px;
+	/*right: -200px;*/
+	right:0px;
 	background: #333;
 	transition: width 1s ease;
-	width: 200px;
+	width: 0px;
     height: 100%;
     z-index: 1;
     webkit-box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
     box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
+    display: block;
+    /*pointer-events:auto;*/
+}
+nav.menu h2{
+	display: block;
+	color: #FFF;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,sans-serif;
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
 }
 nav.menu ul{
 	list-style: none;
 }
+nav.menu li a{
+	width: 100%;
+    display: block;
+    padding: 1.25rem;
+    text-decoration: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    border-top: 1px solid #797979;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+nav.menu li a:hover{
+	background: #FFF;
+	color: #333;
+}
+
 .ativa-menu{
-	width:400px !important;
+	width:200px !important;
+	/*display: block !important;*/
 }
 .icon-menu{
 	display: block;
@@ -38,11 +69,16 @@ nav.menu ul{
 	top: 10px;
 	color: #333;
 }
+
+/*Modificação feita, usando svg*/
 .icon-close{
 	position: absolute;
-	top: 0;
+	top: 10px;
 	right: 220px;
-	color: #FFF;
+	fill: #FFF;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
 }
 .icon-menu i, .icon-close i{
 	font-size: 42px;
@@ -51,3 +87,9 @@ nav.menu ul{
 .mascara{
 	background: rgba(0,0,0,0.6);
 }
+/*
+#close{
+	width: 40px;
+	height: 40px;
+	fill: #FFF;
+}*/
