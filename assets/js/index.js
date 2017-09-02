@@ -14,3 +14,10 @@ $(".icon-close").click(function(){
 	$(".icon-close").css("display","none");
 });
 
+
+$(".pesquisar").css("display","none");
+//Abrir pesquisar
+$(".icon-pesquisar").click(function(){
+	$("body").addClass("mascara");
+	$(".pesquisar").css("display","block");
+})

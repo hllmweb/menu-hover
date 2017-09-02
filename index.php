@@ -14,7 +14,7 @@
 
 	<span class="icon-menu"><i class="fa fa-bars"></i></span>
 	<span class="icon-close"><!--<i class="fa fa-times"></i>--></span>
-	
+	<span class="icon-pesquisar"><i class="fa fa-search"></i></span>
 
 	<nav class="menu">
 		<h2>Menu</h2>
@@ -24,6 +24,15 @@
 			<li><a href="">Link #03</a></li>
 		</ul>
 	</nav>
+
+	<!--Falta fazer o fechar do pesquisar-->
+	<div class="pesquisar">
+		<form id="form-pesquisar">
+			<label for="txt-busca">
+				<input type="text" id="txt-busca" name="txt-busca" placeholder="Procurar...">
+			</label>
+		</form>
+	</div>
 
 </header>
 
