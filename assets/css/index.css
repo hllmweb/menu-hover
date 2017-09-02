@@ -20,7 +20,7 @@ nav.menu{
 	/*right: -200px;*/
 	right:0px;
 	background: #333;
-	transition: width 1s ease;
+	transition: width .55s ease;
 	width: 0px;
     height: 100%;
     z-index: 1;
@@ -31,6 +31,7 @@ nav.menu{
 }
 nav.menu h2{
 	display: block;
+	width: 200px;
 	color: #FFF;
 	font-family: 'Open Sans','Helvetica Neue',Helvetica,sans-serif;
 	text-align: center;
@@ -39,6 +40,10 @@ nav.menu h2{
 }
 nav.menu ul{
 	list-style: none;
+}
+nav.menu li{
+	width: 200px;
+	display: block;
 }
 nav.menu li a{
 	width: 100%;
