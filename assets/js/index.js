@@ -20,4 +20,11 @@ $(".pesquisar").css("display","none");
 $(".icon-pesquisar").click(function(){
 	$("body").addClass("mascara");
 	$(".pesquisar").css("display","block");
-})
+});
+
+
+//Fechar pesquisar
+$(".icon-busca-close").click(function(){
+	$("body").removeClass("mascara");
+	$(".pesquisar").css("display","none");
+});

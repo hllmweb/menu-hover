@@ -128,6 +128,7 @@ nav.menu li a:hover{
 	font-weight: bold;
 	outline: none;
 	cursor: pointer;
+	position: relative;
 }
 #form-pesquisar input::placeholder{
 	color: #FFF;
@@ -138,6 +139,14 @@ nav.menu li a:hover{
 #form-pesquisar input:hover, #form-pesquisar input:focus{
 	background: #333;
 	color: #FFF;
+}
+#form-pesquisar label i{
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	font-size: 32px;
+	color: #FFF;
+	cursor: pointer;
 }
 
 .mascara{

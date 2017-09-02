@@ -30,6 +30,7 @@
 		<form id="form-pesquisar">
 			<label for="txt-busca">
 				<input type="text" id="txt-busca" name="txt-busca" placeholder="Procurar...">
+				<i class="fa fa-close icon-busca-close"></i>
 			</label>
 		</form>
 	</div>
