@@ -28,3 +28,11 @@ $(".icon-busca-close").click(function(){
 	$("body").removeClass("mascara");
 	$(".pesquisar").css("display","none");
 });
+
+//Fechar pesquisar quando clicar no esc
+$(document).keydown(function(e){
+	if(e.keyCode == 27){
+		$("body").removeClass("mascara");
+		$(".pesquisar").css("display","none");		
+	}
+});
