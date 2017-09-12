@@ -11,22 +11,23 @@ html,body{
 body{
 	webkit-transition: all .25s ease;
 	transition: all .25s ease;
-	/*display: flex;*/
+	display: flex;
 }
 header#topo{
 	/*background: rgba(255,255,255,0.8);*/
-	background-color: transparent;
+	/*background-color: transparent;*/
+	
+	background-color: red;
 	height: 80px;
 	box-shadow: 0 -6px 9px #333;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 1;
 }
 
 nav.menu{
 	position: fixed;
-	z-index: 30;
+	z-index: 3;
 	top: 0;
 	/*right: -200px;*/
 	right:0px;
@@ -37,7 +38,7 @@ nav.menu{
     webkit-box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
     box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
     display: block;
-    /*pointer-events:auto;*/
+    pointer-events:auto;
 }
 nav.menu h2{
 	text-transform: uppercase;
@@ -180,16 +181,18 @@ nav.menu li a:hover{
 	fill: #FFF;
 }*/
 
-.mascara:after {
+.mascara:after{
     position: fixed;
-    top: 0;
-    left: 0;
+    /*top: 0;
+    left: 0;*/
+   	top: 0;
+	bottom: 0;
     width: 100%;
     height: 100%;
     min-height: 100%;
     background-color: rgba(0,0,0,0.6);
     content: '';
-    /*z-index: 18;*/
+    /*z-index: 10;*/
 }
 
 
