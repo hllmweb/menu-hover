@@ -36,3 +36,13 @@ $(document).keydown(function(e){
 		$(".pesquisar").css("display","none");		
 	}
 });
+
+
+//Fechar pesquisar quando clicar na mascara
+/*$(document).click(function(e) {
+	$(".modal_medio:not(.nao-fechar)").hide();
+});
+
+$(".mascara").click(function(e) {
+	e.stopPropagation();
+});*/
