@@ -33,7 +33,10 @@ $(".icon-busca-close").click(function(){
 $(document).keydown(function(e){
 	if(e.keyCode == 27){
 		$("body").removeClass("mascara");
-		$(".pesquisar").css("display","none");		
+		$(".pesquisar").css("display","none");
+
+		$(".menu").removeClass("ativa-menu");
+		$(".icon-close").css("display","none");		
 	}
 });
 

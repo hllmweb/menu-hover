@@ -1,5 +1,5 @@
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 	margin: 0;
@@ -14,9 +14,9 @@ body{
 	display: flex;
 }
 header#topo{
-	/*background: rgba(255,255,255,0.8);*/
+	background: rgba(255,255,255,0.8);
 	/*background-color: transparent;*/
-	background-color: red;
+	
 	height: 80px;
 	box-shadow: 0 -6px 9px #333;
 	position: fixed;
@@ -24,7 +24,19 @@ header#topo{
 	width: 100%;
 	z-index: 3;
 }
-
+.logo{
+	position: absolute;
+	left: 20px;
+	height: 100%;
+}
+.logo h2 a{
+	display: block;
+	text-transform: uppercase;
+	line-height: 80px;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,sans-serif;
+	text-decoration: none;
+	color: #333;
+}
 nav.menu{
 	position: fixed;
 	z-index: 15;
@@ -84,7 +96,7 @@ nav.menu li a:hover{
 	position: absolute;
 	right: 20px;
 	top: 15px;
-	color: #FFF;
+	color: #333;
 }
 
 /*Modificação feita, usando svg*/
@@ -103,7 +115,7 @@ nav.menu li a:hover{
 	position: absolute;
 	right: 80px;
 	top: 15px;
-	color: #FFF;
+	color: #333;
 }
 .icon-menu i, .icon-close i, .icon-pesquisar i{
 	font-size: 42px;
@@ -208,7 +220,7 @@ nav.menu li a:hover{
 
 .limite{
 	margin: 0 auto;
-	width: 950px; /*70%*/
+	width: 1200px; /*70%*/
 }
 /*
 *
@@ -312,6 +324,7 @@ section#posts .post-img{
 }
 section#posts .post-img img{
 	width: 100%;
+	cursor: alias;
 }
 section#posts .post-info{
 	display: block; 
